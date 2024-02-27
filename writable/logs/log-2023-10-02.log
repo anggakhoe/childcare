@@ -1,0 +1,20 @@
+CRITICAL - 2023-10-02 01:14:43 --> Invalid file: header.php
+#0 C:\xampp\htdocs\stipenbaru\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\stipenbaru\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\stipenbaru\app\Controllers\Home.php(20): view('header')
+#3 C:\xampp\htdocs\stipenbaru\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\stipenbaru\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\stipenbaru\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\stipenbaru\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\stipenbaru\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-10-02 01:27:42 --> file_get_contents(): SSL: An existing connection was forcibly closed by the remote host.
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\stipenbaru\app\Controllers\Home.php(35): file_get_contents('https://www.goo...')
+#2 C:\xampp\htdocs\stipenbaru\system\CodeIgniter.php(832): App\Controllers\Home->aksi_login()
+#3 C:\xampp\htdocs\stipenbaru\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\stipenbaru\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\stipenbaru\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\stipenbaru\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
